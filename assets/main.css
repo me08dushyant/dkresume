@@ -222,7 +222,7 @@ dt{
 
         .details{
           display:grid;
-          grid-template-columns:3fr 8fr 3fr;
+          grid-template-columns:3fr 8fr;
           border-bottom: #ccc .1em solid;
         }
 
