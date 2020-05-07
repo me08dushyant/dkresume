@@ -59,11 +59,21 @@
 	 color:white;
 }
 
+.top-nav{
+	display:grid;
+	grid-template-columns: 60px 60px 60px auto 60px 60px;
+	background-color:black; color: white; padding:1em; margin:0px;
+	grid-gap:1em;
+	
+}
+.last-icon{
+	grid-column: -2/-1;
+	
+}
+
 dt{
  position: sticky;
-      top: 0px;
-      left:0px;
-	  color:white;
+      color:white;
 }
       .quick{
         grid-row:1/-1;
