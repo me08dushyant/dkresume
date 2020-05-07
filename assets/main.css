@@ -176,6 +176,9 @@ dt{
         grid-template-rows:20px auto;
 
       }
+	 .points{
+		grid-column:1/3;
+	}
       .work > p { grid-column: 1/-1; align-self:center; }
       .work > .year { justify-self:right; font-weight:700;}
       .brands{
