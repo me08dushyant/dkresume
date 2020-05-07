@@ -195,7 +195,7 @@ dt{
 	.persondetail > div{ padding-right:20px;}
 
 
-      .brands img{width:120px; padding-top:5px;}
+      .brands img{width:150px; padding-top:5px;}
 
 @media screen and (max-width: 1440px) { 
  body{
@@ -233,7 +233,7 @@ dt{
 
         .brands{
           display:grid;
-          grid-template-columns: repeat(auto-fill, minmax(120px, 1fr ));
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr ));
 
         }
 
