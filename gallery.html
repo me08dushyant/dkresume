@@ -10,15 +10,18 @@
   <body>
   <div class="sticky">
   <dl class="top-nav">
-  <dt><img width="60px" src="images/mail.png"> </dt> <dt> <img width="60px" src="images/whatsapp.png"> </dt> <dt> <img width="60px" src="images/skype.png"> </dt> <dt class="last-icon"><img width="60px" src="images/nav.png"></dt> 
+  <dt><img width="60px" src="images/mail.png"> </dt> <dt> <img width="60px" src="images/whatsapp.png"> </dt> <dt> <img width="60px" src="images/skype.png"> </dt> <dt class="last-icon"> <a onclick = "navSlide();"><img class="burger" width="60px" src="images/nav.png"></a></dt> 
   </dl>
   </div>
   <div class="wrapper">
   
     <div class="quick">
       <h3>Quick Links</h3>
-
+	  
+	 
       <ul>
+	  <h4>RESUME </h4>
+	  <br/>
       <h4>360 VR </h4>
       <li> <a href="http://experiencethecircuit.com/" target="_blank"> COTA </a> </li>
       <li> <a href="http://www.bbcamerica.com/shows/planet-earth-blue-planet-ii/alucia-360-experience" target="_blank">Blue Planet </a> </li>
@@ -27,7 +30,7 @@
 	  <li> <a href="http://spm360.de/favorit-massivhaus/herbsthaus/" target="_blank">Favorit</a> </li>
       <br>
 
-      <h4> Interactives</h4>
+      <h4> INTERACTIVES</h4>
       
       <li> <a href="https://online-media.s3.us-east-2.amazonaws.com/games/index.html" target="_blank" >Gems</a> </li>
       <li> <a href="https://online-media.s3.us-east-2.amazonaws.com/virtual-tour/real%20to%203d/index.html" target="_blank">Real/3D</a> </li>
@@ -35,14 +38,14 @@
 	  <li> <a href="https://online-media.s3.us-east-2.amazonaws.com/lifesaver-template/vtour5/index.html" target="_blank">Video Quiz </a> </li>
       <br>
 
-      <h4> Arch Renderings </h4>
+      <h4> ARCH RENDERS </h4>
       <li> <a  onclick="show(1)">Interior </a> </li>
       <li> <a  onclick="show(2)" >Exterior </a> </li>
 	  <li> <a  onclick="show(3)" >VR </a> </li>
      
       <br>
 
-      <h4> Products </h4>
+      <h4> PRODUCTS </h4>
       <li> <a onclick="show('4','img')">Furniture </a> </li>
       <li> <a onclick="show('5','img')" >Perfume </a></li>
       <li> <a onclick="show('4','ccc')">Cosmetics </a> </li>
@@ -90,50 +93,15 @@
 
 
   
-  <script type="module" src="js/port-folio.js"></script>
-  
-  <script type="text/javascript">
-
-var link = document.querySelector("port-folio");
-
-//	var link = document.getElementById("myLink");
-    
-    // Getting the attributes values
-   // var href = link.getAttribute("folioIndex"); 
-	//var contype = link.getAttribute("cat");
-	
-	const queryString = window.location.search;
-
-const urlParams = new URLSearchParams(queryString);
-
-const cont = urlParams.get('cont');
-const type = urlParams.get('type');
-
-console.log(cont);
-
-    
-   function show(index, txt){ 
-    link.setAttribute("folioIndex", index);
-	link.setAttribute("cat", txt);
-	document.getElementById("resume").style.display = "none";
-	document.getElementById('portfolio').classList.add("portfolio-new");
-	}
-	
-	 function startup(index, txt){ 
-    link.setAttribute("folioIndex", index);
-	link.setAttribute("cat", txt);
-	}
-	
-	
-	function loadImage() {
-   link.setAttribute("folioIndex", '3');
-	link.setAttribute("cat", 'img');
-}
-
-window.onload = function() {
  
-//show(cont,type);
- }
+  
+  <script type="text/javascript">  
+
+const nav = document.querySelector('.quick');	
+function navSlide() {	
+		nav.classList.toggle('nav-active');
+	
+}
 </script>
   
   </body>

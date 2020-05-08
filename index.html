@@ -10,7 +10,7 @@
   <body>
   <div class="sticky">
   <dl class="top-nav">
-  <dt><img width="60px" src="images/mail.png"> </dt> <dt> <img width="60px" src="images/whatsapp.png"> </dt> <dt> <img width="60px" src="images/skype.png"> </dt> <dt class="last-icon"><img width="60px" src="images/nav.png"></dt> 
+  <dt><img width="60px" src="images/mail.png"> </dt> <dt> <img width="60px" src="images/whatsapp.png"> </dt> <dt> <img width="60px" src="images/skype.png"> </dt> <dt class="last-icon"> <a onclick = "navSlide();"><img class="burger" width="60px" src="images/nav.png"></a></dt> 
   </dl>
   </div>
   <div class="wrapper">
@@ -218,7 +218,7 @@
 
   
   <script type="module" src="js/port-folio.js"></script>
-  
+
   <script type="text/javascript">
 
 var link = document.querySelector("port-folio");
@@ -256,6 +256,16 @@ console.log(cont);
    link.setAttribute("folioIndex", '3');
 	link.setAttribute("cat", 'img');
 }
+
+const burger = document.querySelector('.burger');
+	const nav = document.querySelector('.quick');
+	
+function navSlide() {
+	
+		nav.classList.toggle('nav-active');
+	
+}	
+	
 
 window.onload = function() {
  
