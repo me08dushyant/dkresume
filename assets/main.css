@@ -34,6 +34,7 @@
       }
 
 .quick-links{
+	
 	background: black;
 	width:200px;
 	height:100vh;
@@ -68,6 +69,10 @@
 	
 	
 }
+
+.gallery-holder{ display:none;}
+	
+			
 .last-icon{
 	grid-column: -2/-1;
 	
@@ -225,6 +230,8 @@ dt{
     grid-auto-flow:dense;
 
   }
+  
+  .gallery-holder{ display:none;}
 
 }
 
@@ -233,7 +240,9 @@ dt{
           display:grid;
           grid-template-columns:3fr 8fr ;
         }
-		
+
+
+	
  .top-nav{
 	display:grid;
 	grid-template-columns: 60px 60px 60px auto 60px 60px;
@@ -242,6 +251,41 @@ dt{
 	
 	
 }
+
+.gallery-holder	{
+		display:block;
+		grid-column: 1/-1;
+		grid-row: 1/2;
+		height:100vh;
+		
+	}
+.gallery-holder	.img-holder{
+		margin:0px; 
+		padding:0px;
+		background-color:black;
+		height:100vh;
+		overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  
+  
+  display: grid;
+  grid-auto-flow: column;
+  margin:0px; 
+		padding:0px;
+		
+	}
+.gallery-holder .img-holder img 
+	 {  width:100vw;
+		height:100vh;
+        object-fit:  cover;
+		scroll-snap-align:start;
+margin:0px; 
+		padding:0px;
+		
+     } 
+	 
+	 
         .resume{
             grid-template-columns:2fr 9fr  ;
           grid-column: 1/-1;
@@ -264,7 +308,7 @@ dt{
         .quick{
           grid-column:1/2;
           grid-row:1/2;		  
-		  transform:translateX(-20%) translateY(50);
+		  transform:translateX(-100%) ;
 		
 		  
 
@@ -302,7 +346,7 @@ dt{
         grid-column:1/2;
         grid-row:1/3;
         z-index: 5;
-		transform:translateX(0%);
+		transform:translateX(-100%);
        
 
         }
